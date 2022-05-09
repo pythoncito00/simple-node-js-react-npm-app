@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install && cd /repos && npm start' 
+                sh 'npm install'
+                sh 'cd /repos'
+                sh 'npm start'
             }
         }
     }
